@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serenity – Rendements journaliers | Winners Portfolio Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/analytics.css">
+</head>
+
+<body class="analytics-page theme-serenity">
+
+  <header class="topbar">
+    <a class="brand" href="../../index.html">
+      <img src="../../img/logo.png" alt="">
+      <span>Winners Portfolio Management</span>
+    </a>
+
+    <nav class="pager" aria-label="Analyses Serenity">
+      <span class="label">Serenity · Analyse</span>
+      <a href="1.html" aria-label="Précédente">‹</a>
+      <a href="1.html">1</a>
+      <a class="current" href="2.html">2</a>
+      <a href="3.html">3</a>
+      <a href="4.html">4</a>
+      <a href="5.html">5</a>
+      <a href="6.html">6</a>
+      <a href="3.html" aria-label="Suivante">›</a>
+    </nav>
+
+    <nav class="actions">
+      <a href="../../1.html">← Tableau de bord</a>
+      <a href="news.html">Actualités</a>
+      <a href="../../index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <!-- Colonne 1 : titre, graphe en haut à gauche, lecture du graphe -->
+    <section class="col">
+      <span class="tag">Serenity · Analyse 2 sur 6</span>
+      <h1>Rendements journaliers</h1>
+
+      <figure class="graph">
+        <iframe src="../../img/1/marko-2.html" title="Rendements journaliers"></iframe>
+      </figure>
+
+      <div class="block">
+        <h2>Sur le graphe</h2>
+<p>Un rendement journalier est la variation de prix d'un jour à l'autre, en pourcentage : <strong>0,01 sur l'axe vertical correspond à +1 %</strong>. Contrairement aux prix de l'analyse 1, ces valeurs oscillent autour de zéro au lieu de monter ou de descendre : c'est la matière première de tous les calculs de risque.</p>
+<p>L'amplitude de ces oscillations, mesurée par l'écart-type puis annualisée (multipliée par √252), s'appelle la <strong>volatilité</strong>. Un nuage étroit signale un actif calme, un pic isolé un jour de choc. Zoomez en glissant la souris (double-clic pour revenir), ou double-cliquez sur un nom de la légende pour isoler un actif.</p>
+    </section>
+
+    <!-- Colonne 2 : observations -->
+    <section class="col">
+      <div class="stats">
+        <div class="stat"><b>25</b><span>actifs dans Serenity</span></div>
+        <div class="stat"><b>752</b><span>rendements journaliers par actif</span></div>
+        <div class="stat"><b>± 15 %</b><span>pics extrêmes sur la période</span></div>
+      </div>
+
+      <div class="block">
+        <h2>Ce que l'on observe</h2>
+        <ul>
+          <li><strong>Des rendements centrés sur zéro.</strong> Le nuage oscille autour de 0 et, la plupart des jours, reste entre −3 % et +3 % : pas de tendance, seulement du bruit quotidien. La hausse des prix de l'analyse 1 vient du cumul d'un léger biais positif.</li>
+          <li><strong>Une amplitude globalement stable.</strong> La largeur du nuage varie peu sur trois ans, avec des épisodes plus agités que d'autres : les journées calmes et les journées agitées arrivent par séries.</li>
+          <li><strong>Deux pics extrêmes.</strong> La plus forte baisse (≈ −14,8 %) est la courbe de 2914.T, début août 2024, à l'époque de la chute des marchés japonais, suivie d'un rebond d'environ +9 %. Le plus fort bond (≈ +15,3 %) est celui d'AAPL, début avril 2025.</li>
+          <li><strong>Avril 2025 : une tempête commune.</strong> Plusieurs actifs enregistrent des variations de plus de 7 % dans les deux sens en quelques jours, ce qui confirme le choc commun repéré à l'analyse 1.</li>
+          <li><strong>Des pics rares mais coûteux.</strong> Ces valeurs isolées sont peu fréquentes, mais elles pèsent lourd dans la volatilité. La distribution de ces rendements est étudiée à l'analyse 3.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Colonne 3 : limites, à retenir, ressources -->
+    <section class="col">
+      <div class="callout">
+        <h2>À retenir pour Serenity</h2>
+        <p>Pris un par un, la plupart des actifs de Serenity ont une volatilité annualisée de l'ordre de 15 à 22 %. Le portefeuille optimal n'est qu'à <strong>8,34 %</strong> : les actifs ne montent et ne baissent pas tous le même jour, donc leurs mouvements se compensent en partie. C'est la <strong>diversification</strong>, que l'on mesure aux analyses 5 et 6.</p>
+      </div>
+
+      <div class="block">
+        <h2>Les limites</h2>
+        <ul>
+          <li><strong>Un graphe dense.</strong> Vingt-cinq séries superposées : on ne suit un actif que grâce à la légende interactive. Pour mesurer précisément le risque, il faut passer par les statistiques (analyses 3 et 6).</li>
+          <li><strong>La volatilité traite hausses et baisses pareil.</strong> Un bond de +15 % compte autant qu'une chute de −15 % : le modèle de Markowitz pénalise aussi les bonnes surprises.</li>
+          <li><strong>Des marchés qui ne ferment pas ensemble.</strong> Tokyo, Hong Kong, Paris, New York : jours fériés différents et valeurs manquantes (jusqu'à 50 dates pour les actifs japonais) à combler. Cela peut décaler des rendements d'un jour et faire paraître les actifs moins corrélés qu'ils ne le sont.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Pour aller plus loin</h2>
+        <div class="links">
+          <a href="https://ryanoconnellfinance.com/course-articles/standard-deviation-in-finance/" target="_blank" rel="noopener">
+            <small>Article · Ryan O'Connell Finance</small>
+            <b>Standard Deviation in Finance: Volatility Explained</b>
+          </a>
+          <a href="https://www.etftrends.com/?p=405438" target="_blank" rel="noopener">
+            <small>Article · ETF Trends</small>
+            <b>Écart-type et risque de perte : les limites de la volatilité</b>
+          </a>
+        </div>
+      </div>
+
+      <p class="disclaimer">Projet pédagogique. Ne constitue pas un conseil en investissement. Les performances passées ne préjugent pas des performances futures.</p>
+    </section>
+
+  </main>
+</body>
+</html>

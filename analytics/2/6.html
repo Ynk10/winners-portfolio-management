@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Velocity – Contribution à la variance | Winners Portfolio Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/analytics.css">
+</head>
+
+<body class="analytics-page theme-velocity">
+
+  <header class="topbar">
+    <a class="brand" href="../../index.html">
+      <img src="../../img/logo.png" alt="">
+      <span>Winners Portfolio Management</span>
+    </a>
+
+    <nav class="pager" aria-label="Analyses Velocity">
+      <span class="label">Velocity · Analyse</span>
+      <a href="5.html" aria-label="Précédente">‹</a>
+      <a href="1.html">1</a>
+      <a href="2.html">2</a>
+      <a href="3.html">3</a>
+      <a href="4.html">4</a>
+      <a href="5.html">5</a>
+      <a class="current" href="6.html">6</a>
+      <a class="disabled" href="#" aria-label="Suivante">›</a>
+    </nav>
+
+    <nav class="actions">
+      <a href="../../2.html">← Tableau de bord</a>
+      <a href="news.html">Actualités</a>
+      <a href="../../index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <!-- Colonne 1 : titre, graphe en haut à gauche, lecture du graphe -->
+    <section class="col">
+      <span class="tag">Velocity · Analyse 6 sur 6</span>
+      <h1>Contribution à la variance</h1>
+
+      <figure class="graph">
+        <iframe src="../../img/2/marko-6.html" title="Contribution à la variance"></iframe>
+      </figure>
+
+      <div class="block">
+        <h2>Sur le graphe</h2>
+          <p>Chaque barre montre la part de la <strong>variance totale du portefeuille</strong>, c'est-à-dire du risque, qui vient d'un actif. Cette contribution dépend du poids de l'actif, de sa volatilité et surtout de sa corrélation avec les autres. Les 25 barres s'additionnent à 100 % et sont classées de la plus grande à la plus petite.</p>
+          <p>Pour lire le graphe, comparez chaque barre au <strong>poids de l'actif</strong> (analyse 4). Si la contribution est supérieure au poids, l'actif ajoute plus de risque qu'il ne pèse. Si elle est inférieure, il aide à diversifier. Survolez une barre pour lire sa valeur exacte.</p>
+      </div>
+    </section>
+
+    <!-- Colonne 2 : observations -->
+    <section class="col">
+      <div class="stats">
+        <div class="stat"><b>25</b><span>actifs dans Velocity</span></div>
+        <div class="stat"><b>28,5 %</b><span>du risque porté par 6857.T seul (9,3 % du capital)</span></div>
+        <div class="stat"><b>42 %</b><span>du risque dans 2 actifs (18 % du capital)</span></div>
+      </div>
+
+      <div class="block">
+        <h2>Ce que l'on observe</h2>
+        <ul>
+          <li><strong>Un risque très concentré.</strong> 6857.T porte 28,52 % du risque et RR.L 13,41 % : à eux deux, 41,9 % du risque pour 18,3 % du capital. Les cinq premiers actifs en concentrent 59,4 %.</li>
+          <li><strong>6857.T : trois fois son poids.</strong> Il pèse 9,33 % du capital mais porte 28,52 % du risque. Sa corrélation moyenne avec les autres actifs est faible (≈ 0,10) : ce n'est pas un effet de groupe, c'est son risque propre (64 % de volatilité par an) qui pèse. Environ 20 points sur 28,5 viennent de sa seule variance.</li>
+          <li><strong>Les semi-conducteurs : 14,5 % du capital, 38 % du risque.</strong> MU porte 2,18 fois son poids en risque, LRCX 1,94 fois, AMAT 1,80 fois, KLAC 1,77 fois et ASML.AS 1,55 fois.</li>
+          <li><strong>Un socle qui diversifie.</strong> TJX (0,35 fois son poids), IBE.MC (0,35), XOM (0,36), COST (0,37), MA (0,51) et V (0,52) absorbent du capital pour très peu de risque. IBE.MC, premier poids à 9,46 %, ne porte que 3,28 % du risque.</li>
+          <li><strong>Six actifs seulement au-dessus de 4 %.</strong> 6857.T, RR.L, CSCO, ITX.MC, CNQ.TO et AAPL, contre dix pour Serenity : le risque est moins réparti.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Colonne 3 : limites, à retenir, ressources -->
+    <section class="col">
+      <div class="callout">
+        <h2>À retenir pour Velocity</h2>
+          <p>Velocity concentre son risque pour concentrer son rendement : <strong>un seul actif, 6857.T, porte plus du quart du risque</strong>. C'est le pari à surveiller. Le reste du portefeuille est très diversifié (corrélation moyenne entre actifs d'environ 0,16), ce qui limite la volatilité globale à 13,3 %.</p>
+      </div>
+
+      <div class="block">
+        <h2>Les limites</h2>
+        <ul>
+          <li><strong>Un actif cote à Tokyo.</strong> 6857.T compte 49 jours à rendement nul (jours fériés comblés) : sa volatilité est sous-estimée d'environ 2 points, et sa corrélation avec les marchés occidentaux l'est probablement aussi à cause du décalage horaire. Son poids dans le risque est donc plutôt minoré.</li>
+          <li><strong>La variance n'est pas tout.</strong> Cette mesure ignore les queues épaisses vues à l'analyse 3 : le risque des jours extrêmes est sous-estimé.</li>
+          <li><strong>Une photographie, pas une trajectoire.</strong> Les contributions sont calculées à poids fixes. Sans rééquilibrage, un actif qui monte voit son poids, et donc sa part de risque, grandir.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Pour aller plus loin</h2>
+        <div class="links">
+          <a href="https://faculty.washington.edu/ezivot/econ424/riskbudgetingslides.pdf" target="_blank" rel="noopener">
+            <small>Cours · University of Washington (PDF)</small>
+            <b>Portfolio Risk Budgeting</b>
+          </a>
+          <a href="https://metricgate.com/docs/fr/risk-parity/" target="_blank" rel="noopener">
+            <small>Guide · MetricGate</small>
+            <b>Parité des risques (contribution égale au risque)</b>
+          </a>
+        </div>
+      </div>
+
+      <p class="disclaimer">Projet pédagogique. Ne constitue pas un conseil en investissement. Les performances passées ne préjugent pas des performances futures.</p>
+    </section>
+
+  </main>
+</body>
+</html>

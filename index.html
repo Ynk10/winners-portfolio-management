@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Winners Portfolio Management – Portefeuilles Serenity et Velocity</title>
+  <meta name="description" content="Deux portefeuilles construits avec un screener d'actifs et l'optimisation Markowitz-Sharpe : Serenity (prudent) et Velocity (dynamique).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body class="home">
+
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <img class="logo" src="img/logo.png" alt="">
+      <span>Winners Portfolio Management</span>
+    </a>
+    <nav>
+      <a href="1.html">Serenity</a>
+      <a href="2.html">Velocity</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Deux portefeuilles, une même méthode.</h1>
+        <p>Les actifs sont sélectionnés avec un screener, puis pondérés grâce au modèle de Markowitz et au ratio de Sharpe. Serenity cherche la stabilité, Velocity la croissance.</p>
+      </div>
+      <figure class="hero-visual">
+        <img src="img/winners_portfolio_management.svg" alt="Illustration du projet">
+      </figure>
+    </section>
+
+    <section class="portfolios">
+      <article class="card card-serenity">
+        <div class="card-head">
+          <h2>Serenity</h2>
+          <a class="btn btn-serenity" href="1.html">Voir les analyses</a>
+        </div>
+        <p>Le portefeuille prudent : une volatilité contenue et des actifs choisis pour leur régularité.</p>
+        <iframe src="img/1/gauge-1.html" title="Jauge du portefeuille Serenity" loading="lazy"></iframe>
+        <ul class="kpis">
+          <li><b>21.89 %</b>rendement</li>
+          <li><b>8.15 %</b>volatilité</li>
+          <li><b>0,14</b>bêta</li>
+        </ul>
+      </article>
+
+      <article class="card card-velocity">
+        <div class="card-head">
+          <h2>Velocity</h2>
+          <a class="btn btn-velocity" href="2.html">Voir les analyses</a>
+        </div>
+        <p>Le portefeuille dynamique : un risque assumé pour viser un rendement plus élevé.</p>
+        <iframe src="img/2/gauge-1.html" title="Jauge du portefeuille Velocity" loading="lazy"></iframe>
+        <ul class="kpis">
+          <li><b>40,06 %</b>rendement</li>
+          <li><b>13,32 %</b>volatilité</li>
+          <li><b>0,59</b>bêta</li>
+        </ul>
+      </article>
+    </section>
+
+    <ol class="method">
+      <li><h3>1. Sélection des actifs</h3><p>Un screener filtre l'univers selon la qualité, la liquidité et la performance.</p></li>
+      <li><h3>2. Optimisation Markowitz-Sharpe</h3><p>La frontière efficiente donne les meilleurs compromis rendement-risque, le ratio de Sharpe l'allocation retenue.</p></li>
+      <li><h3>3. Lecture des graphes</h3><p>Chaque graphe a sa page d'analyse : ce qu'il montre, comment l'interpréter, ses limites.</p></li>
+    </ol>
+  </main>
+
+  <footer>
+    <p class="team">Yannick TCHALLA</p>
+    <p class="legal">Projet pédagogique. Ne constitue pas un conseil en investissement. Les performances passées ne préjugent pas des performances futures.</p>
+  </footer>
+
+</body>
+</html>

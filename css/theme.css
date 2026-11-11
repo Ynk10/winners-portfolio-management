@@ -1,0 +1,89 @@
+/* ===== Thèmes des tableaux de bord – à placer dans css/theme.css =====
+   À charger APRÈS customize.css dans 1.html et 2.html */
+
+/* Couleurs propres à chaque portefeuille */
+.theme-serenity {
+  --accent: #4fd1c0;
+  --on-accent: #0e0c15;
+  --bg: rgb(16, 34, 38);
+  --line: rgba(79, 209, 192, 0.35);
+  --icon-hue: 100deg;     /* vert d'origine -> turquoise (ajustable) */
+}
+.theme-velocity {
+  --accent: #ff3d6e;
+  --on-accent: #ffffff;
+  --bg: rgb(38, 14, 20);
+  --line: rgba(255, 61, 110, 0.45);
+  --icon-hue: -95deg;     /* vert d'origine -> rouge (ajustable) */
+}
+
+/* Fond de page teinté + fine bordure autour de chaque graphe */
+body.dashboard { background-color: var(--bg); }
+.dashboard div > iframe {
+  outline: 1px solid var(--line);
+  outline-offset: -1px;
+}
+
+/* Menu + texte "Analyse" (icône à gauche du texte, teinte du thème) */
+.dashboard div > a {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 8px;
+  z-index: 2;
+  padding: 3px 10px 3px 6px;
+  border-radius: 8px;
+  background: rgba(40, 40, 40, 0.85);
+  font-size: 16px;
+  font-weight: 600;
+}
+.dashboard div > a:after {
+  position: static;
+  display: block;
+  filter: hue-rotate(var(--icon-hue));
+}
+
+/* Coin haut droit : nom du portefeuille + retour accueil */
+.topright {
+  position: fixed;
+  top: 8px;
+  right: 12px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.badge {
+  padding: 6px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: rgba(40, 40, 40, 0.85);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 16px;
+}
+.dashboard .topright .home-link {
+  position: static;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px 6px 10px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--on-accent) !important;
+  font-size: 16px;
+  font-weight: 700;
+}
+.dashboard .topright .home-link img { height: 22px; width: auto; }
+.dashboard .topright .home-link:hover { text-decoration: none; filter: brightness(1.12); }
+
+/* Velocity : plus nerveux (italique, majuscules, angles plus vifs) */
+.theme-velocity .badge {
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 3px;
+}
+.dashboard.theme-velocity .topright .home-link,
+.dashboard.theme-velocity div > a { border-radius: 3px; }

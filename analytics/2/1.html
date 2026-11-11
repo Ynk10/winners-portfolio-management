@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Velocity – Évolution des prix (base 100) | Winners Portfolio Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/analytics.css">
+</head>
+
+<body class="analytics-page theme-velocity">
+
+  <header class="topbar">
+    <a class="brand" href="../../index.html">
+      <img src="../../img/logo.png" alt="">
+      <span>Winners Portfolio Management</span>
+    </a>
+
+    <nav class="pager" aria-label="Analyses Velocity">
+      <span class="label">Velocity · Analyse</span>
+      <a class="disabled" href="#" aria-label="Précédente">‹</a>
+      <a class="current" href="1.html">1</a>
+      <a href="2.html">2</a>
+      <a href="3.html">3</a>
+      <a href="4.html">4</a>
+      <a href="5.html">5</a>
+      <a href="6.html">6</a>
+      <a href="2.html" aria-label="Suivante">›</a>
+    </nav>
+
+    <nav class="actions">
+      <a href="../../2.html">← Tableau de bord</a>
+      <a href="news.html">Actualités</a>
+      <a href="../../index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <!-- Colonne 1 : titre, graphe en haut à gauche, lecture du graphe -->
+    <section class="col">
+      <span class="tag">Velocity · Analyse 1 sur 6</span>
+      <h1>Évolution des prix en base 100</h1>
+
+      <figure class="graph">
+        <iframe src="../../img/2/marko-1.html" title="Évolution des prix en base 100"></iframe>
+      </figure>
+
+      <div class="block">
+        <h2>Sur le graphe</h2>
+          <p>Chaque courbe suit le prix d'un actif, ramené à <strong>100 au départ</strong> (30 octobre 2023). Une courbe à 500 signifie que le prix a été multiplié par cinq, quel que soit son niveau initial. C'est ce qui permet de comparer sur une même échelle des actions aussi différentes qu'AAPL, RR.L ou 6857.T.</p>
+          <p>C'est la première étape de la méthode : avant d'optimiser, on observe comment les actifs se comportent, seuls puis les uns par rapport aux autres. Survolez une courbe pour lire sa valeur à une date précise, ou cliquez sur un nom de la légende pour la masquer. Masquer MU, dont la courbe écrase les autres, rend le reste du graphe beaucoup plus lisible.</p>
+      </div>
+    </section>
+
+    <!-- Colonne 2 : observations -->
+    <section class="col">
+      <div class="stats">
+        <div class="stat"><b>25</b><span>actifs dans Velocity</span></div>
+        <div class="stat"><b>3 ans</b><span>30 oct. 2023 → 29 oct. 2026</span></div>
+        <div class="stat"><b>151 → 1 428</b><span>niveaux finaux (départ = 100)</span></div>
+      </div>
+
+      <div class="block">
+        <h2>Ce que l'on observe</h2>
+        <ul>
+          <li><strong>Un éventail immense.</strong> Toutes les courbes partent de 100, puis s'écartent fortement : en fin de période, elles se répartissent entre 151 (VRTX) et 1 428 (MU), avec une médiane autour de 242. Dix-sept actifs sur 25 dépassent 200.</li>
+          <li><strong>Une hausse sans exception.</strong> Aucun actif ne termine sous 150 : les 25 valeurs ont au moins progressé de moitié en trois ans.</li>
+          <li><strong>Une locomotive de semi-conducteurs.</strong> MU voit son prix multiplié par plus de 14 (sommet à 1 854 le 25 juin 2026, puis un recul de 23 %), devant 6857.T (≈ 890), RR.L (≈ 700), CRWD (≈ 598) et NVDA (≈ 521). Huit actifs dépassent 300, dont six sont liés aux semi-conducteurs (MU, 6857.T, NVDA, LRCX, KLAC, AMAT).</li>
+          <li><strong>Des valeurs « calmes » à l'arrière.</strong> IBE.MC, ALV.DE, COST, V ou TJX progressent régulièrement mais finissent entre 167 et 254 : ils sont tassés tout en bas du graphe, malgré de bons rendements.</li>
+          <li><strong>Un choc commun début avril 2025.</strong> Le 4 avril, les 25 actifs perdent en moyenne 5,7 % dans la journée, puis rebondissent de 7,1 % en moyenne le 9 avril. BHP.AX (≈ 77) et CNQ.TO (≈ 85) retombent alors bien sous 100.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Colonne 3 : limites, à retenir, ressources -->
+    <section class="col">
+      <div class="callout">
+        <h2>À retenir pour Velocity</h2>
+          <p>Velocity assume le risque : une poignée de valeurs a vu son prix <strong>multiplié par 5 à 14</strong> (semi-conducteurs, technologie, aéronautique). C'est ce qui explique un rendement de 40 % par an, mais aussi pourquoi le portefeuille dépend davantage de quelques actifs. La nervosité de ces courbes est mesurée à l'analyse 2.</p>
+      </div>
+
+      <div class="block">
+        <h2>Les limites</h2>
+        <ul>
+          <li><strong>Le passé ne prédit pas l'avenir.</strong> Ces trois ans ont été exceptionnels pour les semi-conducteurs. Les estimations de Markowitz sont très sensibles à une période aussi favorable.</li>
+          <li><strong>Une échelle qui écrase.</strong> MU, à 1 400-1 800, tasse les autres courbes entre 100 et 900. L'écart entre des actifs qui progressent de 70 % et de 150 % devient difficile à voir.</li>
+          <li><strong>Des devises mélangées.</strong> Les prix sont en monnaie locale (USD, EUR, GBP, JPY...) et les dividendes ne sont peut-être pas pris en compte : le rendement réel d'un investisseur européen peut donc différer.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Pour aller plus loin</h2>
+        <div class="links">
+          <a href="https://viking.som.yale.edu/?p=190" target="_blank" rel="noopener">
+            <small>Cours · Yale School of Management</small>
+            <b>The Geography of the Efficient Frontier</b>
+          </a>
+          <a href="https://www.nutmeg.com/insights/markowitzs-legacy-why-modern-portfolio-theory-still" target="_blank" rel="noopener">
+            <small>Article · Nutmeg</small>
+            <b>Markowitz's legacy: why modern portfolio theory still matters</b>
+          </a>
+        </div>
+      </div>
+
+      <p class="disclaimer">Projet pédagogique. Ne constitue pas un conseil en investissement. Les performances passées ne préjugent pas des performances futures.</p>
+    </section>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serenity – Markowitz : 10 000 portefeuilles simulés | Winners Portfolio Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/analytics.css">
+</head>
+
+<body class="analytics-page theme-serenity">
+
+  <header class="topbar">
+    <a class="brand" href="../../index.html">
+      <img src="../../img/logo.png" alt="">
+      <span>Winners Portfolio Management</span>
+    </a>
+
+    <nav class="pager" aria-label="Analyses Serenity">
+      <span class="label">Serenity · Analyse</span>
+      <a href="4.html" aria-label="Précédente">‹</a>
+      <a href="1.html">1</a>
+      <a href="2.html">2</a>
+      <a href="3.html">3</a>
+      <a href="4.html">4</a>
+      <a class="current" href="5.html">5</a>
+      <a href="6.html">6</a>
+      <a href="6.html" aria-label="Suivante">›</a>
+    </nav>
+
+    <nav class="actions">
+      <a href="../../1.html">← Tableau de bord</a>
+      <a href="news.html">Actualités</a>
+      <a href="../../index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <!-- Colonne 1 : titre, graphe en haut à gauche, lecture du graphe -->
+    <section class="col">
+      <span class="tag">Serenity · Analyse 5 sur 6</span>
+      <h1>Markowitz : 10 000 portefeuilles simulés</h1>
+
+      <figure class="graph">
+        <iframe src="../../img/1/marko-5b.html" title="Markowitz : 10 000 portefeuilles simulés"></iframe>
+      </figure>
+
+      <div class="block">
+        <h2>Sur le graphe</h2>
+          <p>Chaque point est un <strong>portefeuille tiré au hasard</strong> : 10 000 combinaisons des 25 actifs, avec des poids choisis au hasard. Sa position donne sa volatilité (axe horizontal) et son rendement annualisé (axe vertical), et sa couleur son ratio de Sharpe, du violet (≈ 1,6) au jaune (≈ 2,2).</p>
+          <p>Le point vert est le portefeuille retenu, celui du <strong>Sharpe maximal</strong>. La droite en pointillés est la <strong>droite de marché des capitaux</strong> (CML) : elle part du taux sans risque (4 %), touche le point vert, et sa pente est égale à ce Sharpe maximal. Survolez un point pour voir les poids du portefeuille correspondant.</p>
+      </div>
+    </section>
+
+    <!-- Colonne 2 : observations -->
+    <section class="col">
+      <div class="stats">
+        <div class="stat"><b>10 000</b><span>portefeuilles simulés</span></div>
+        <div class="stat"><b>2,23</b><span>Sharpe maximal (≈ 1,9 au centre du nuage)</span></div>
+        <div class="stat"><b>8,34 %</b><span>volatilité du portefeuille optimal (rendement : 22,56 %)</span></div>
+      </div>
+
+      <div class="block">
+        <h2>Ce que l'on observe</h2>
+        <ul>
+          <li><strong>Un nuage compact.</strong> Les 10 000 portefeuilles se concentrent entre environ 7,9 % et 9,3 % de volatilité, et entre 17 % et 22 % de rendement. Avec 25 actifs, des poids tirés au hasard ressemblent chacun à une répartition égale, d'où des résultats voisins.</li>
+          <li><strong>Le Sharpe monte avec le rendement.</strong> Le haut du nuage est jaune-vert (≈ 2,1 à 2,2), le bas violet (≈ 1,6) : à risque égal, c'est le rendement qui fait la différence. Le centre du nuage tourne autour de 1,9.</li>
+          <li><strong>Le point vert est au-dessus du nuage.</strong> Le portefeuille optimal (8,34 % de volatilité, 22,56 % de rendement) fait mieux que les meilleurs tirages au hasard et touche presque la CML : l'optimiseur trouve ce que 10 000 essais aléatoires n'atteignent pas.</li>
+          <li><strong>La CML domine tout.</strong> Aucun point ne passe au-dessus de la droite. Sa pente vaut le Sharpe maximal : pour chaque point de volatilité pris, le portefeuille rapporte 2,23 points au-dessus du taux sans risque.</li>
+          <li><strong>Un gain mesurable.</strong> Passer d'un portefeuille moyen du nuage (Sharpe ≈ 1,9) au portefeuille optimal (2,23) améliore le rendement par unité de risque de l'ordre de 15 à 20 %.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Colonne 3 : limites, à retenir, ressources -->
+    <section class="col">
+      <div class="callout">
+        <h2>À retenir pour Serenity</h2>
+          <p>Serenity n'est ni le portefeuille le plus rentable, ni le moins risqué : c'est celui qui offre <strong>le meilleur rendement pour chaque unité de risque</strong>. Sa position sur la CML permet aussi de le mélanger avec du taux sans risque pour baisser la volatilité, et obtenir un profil encore plus prudent.</p>
+      </div>
+
+      <div class="block">
+        <h2>Les limites</h2>
+        <ul>
+          <li><strong>Une simulation qui explore peu.</strong> Des poids tirés au hasard sur 25 actifs donnent toujours des portefeuilles proches de l'équipondération : les allocations très concentrées ne sont jamais testées. Le point vert vient de l'optimiseur, pas de la simulation.</li>
+          <li><strong>Un Sharpe mesuré sur le passé.</strong> Le 2,23 repose sur trois ans de rendements très favorables, et les poids sont optimisés sur ces mêmes données. Un ratio aussi élevé est rarement reproduit en dehors de la période d'étude.</li>
+          <li><strong>Un taux sans risque supposé fixe.</strong> Le calcul utilise 4 % sur toute la période, alors que les taux ont varié. La CML suppose aussi de pouvoir prêter et emprunter à ce taux, ce qui est théorique.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Pour aller plus loin</h2>
+        <div class="links">
+          <a href="https://en.wikipedia.org/wiki/Capital_market_line" target="_blank" rel="noopener">
+            <small>Encyclopédie · Wikipedia</small>
+            <b>Capital market line</b>
+          </a>
+          <a href="https://metricgate.com/docs/fr/capital-market-line/" target="_blank" rel="noopener">
+            <small>Guide · MetricGate</small>
+            <b>Capital Market Line (CML) : Droite du marché des capitaux</b>
+          </a>
+        </div>
+      </div>
+
+      <p class="disclaimer">Projet pédagogique. Ne constitue pas un conseil en investissement. Les performances passées ne préjugent pas des performances futures.</p>
+    </section>
+
+  </main>
+</body>
+</html>

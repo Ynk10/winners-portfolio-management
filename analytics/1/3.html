@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serenity – Distribution des rendements | Winners Portfolio Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/analytics.css">
+</head>
+
+<body class="analytics-page theme-serenity">
+
+  <header class="topbar">
+    <a class="brand" href="../../index.html">
+      <img src="../../img/logo.png" alt="">
+      <span>Winners Portfolio Management</span>
+    </a>
+
+    <nav class="pager" aria-label="Analyses Serenity">
+      <span class="label">Serenity · Analyse</span>
+      <a href="2.html" aria-label="Précédente">‹</a>
+      <a href="1.html">1</a>
+      <a href="2.html">2</a>
+      <a class="current" href="3.html">3</a>
+      <a href="4.html">4</a>
+      <a href="5.html">5</a>
+      <a href="6.html">6</a>
+      <a href="4.html" aria-label="Suivante">›</a>
+    </nav>
+
+    <nav class="actions">
+      <a href="../../1.html">← Tableau de bord</a>
+      <a href="news.html">Actualités</a>
+      <a href="../../index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <!-- Colonne 1 : titre, graphe en haut à gauche, lecture du graphe -->
+    <section class="col">
+      <span class="tag">Serenity · Analyse 3 sur 6</span>
+      <h1>Distribution des rendements</h1>
+
+      <figure class="graph">
+        <iframe src="../../img/1/marko-3.html" title="Distribution des rendements"></iframe>
+      </figure>
+
+      <div class="block">
+        <h2>Sur le graphe</h2>
+          <p>Cet histogramme compte, pour chaque actif, le nombre de jours où le rendement journalier est tombé dans une tranche donnée : <strong>l'axe horizontal</strong> est le rendement (0,05 = +5 %) et <strong>l'axe vertical</strong> le nombre de jours. Les 25 actifs sont superposés, d'où le mélange de couleurs.</p>
+          <p>La forme attendue est une <strong>cloche centrée sur zéro</strong> : beaucoup de petits mouvements, très peu de grands. Le modèle de Markowitz se contente de résumer chaque actif par deux nombres, son rendement moyen et sa variance, ce qui suffit à décrire une loi normale. Double-cliquez sur un nom de la légende pour isoler l'histogramme d'un seul actif.</p>
+      </div>
+    </section>
+
+    <!-- Colonne 2 : observations -->
+    <section class="col">
+      <div class="stats">
+        <div class="stat"><b>25</b><span>actifs dans Serenity</span></div>
+        <div class="stat"><b>≈ 65</b><span>observations dans la barre la plus haute (à 0 %)</span></div>
+        <div class="stat"><b>± 3 %</b><span>zone où se concentre l'essentiel des jours</span></div>
+      </div>
+
+      <div class="block">
+        <h2>Ce que l'on observe</h2>
+        <ul>
+          <li><strong>Une cloche centrée sur zéro.</strong> La grande majorité des jours se situe entre −3 % et +3 %, de façon à peu près symétrique : les hausses et les baisses quotidiennes sont de même ordre.</li>
+          <li><strong>Un pic isolé à 0 %.</strong> Une barre monte à environ 65 jours, alors que le sommet de la cloche tourne autour de 20 à 25. Ce pic est suspect : d'après les couleurs, il concerne surtout 9432.T, 9433.T et 0002.HK, justement les actifs qui ont le plus de valeurs manquantes (50 et 43 dates). Il s'agit probablement de jours de fermeture des marchés où le dernier prix a été reporté, ce qui donne un rendement nul.</li>
+          <li><strong>Des queues épaisses.</strong> Quelques observations isolées vont jusqu'à −15 % et +15 %, très loin de la cloche. Pour des actifs qui bougent typiquement d'environ 1 % par jour, ce sont des écarts qu'une loi normale jugerait quasi impossibles.</li>
+          <li><strong>Des extrêmes dans les deux sens.</strong> Les queues s'étendent des deux côtés : on y trouve des chutes brutales, mais aussi des rebonds violents, comme ceux de l'analyse 2.</li>
+          <li><strong>Un schéma classique.</strong> Les rendements réels des marchés sont généralement décrits comme « à queues épaisses » : les jours extrêmes sont plus fréquents que ne le prévoit la loi normale. Serenity ne fait pas exception.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Colonne 3 : limites, à retenir, ressources -->
+    <section class="col">
+      <div class="callout">
+        <h2>À retenir pour Serenity</h2>
+          <p>Le modèle de Markowitz décrit bien le <strong>cœur de la cloche</strong>, mais il résume mal les jours extrêmes. Le Sharpe de 2,23 et la volatilité de 8,34 % décrivent le risque moyen, pas celui des pires journées. Pour un portefeuille prudent, l'enjeu est de rester solide les jours où plusieurs actifs chutent ensemble : c'est ce que mesurent les analyses 5 et 6.</p>
+      </div>
+
+      <div class="block">
+        <h2>Les limites</h2>
+        <ul>
+          <li><strong>Des histogrammes superposés.</strong> Avec 25 couleurs, on ne lit la distribution d'un actif qu'en l'isolant via la légende. L'axe vertical est un nombre de jours, pas une probabilité.</li>
+          <li><strong>Un pic qui fausse la forme.</strong> Si les rendements nuls viennent de valeurs comblées, ils écrasent artificiellement la cloche et sous-estiment la volatilité des actifs japonais et hongkongais.</li>
+          <li><strong>Une lecture visuelle.</strong> L'épaisseur des queues et l'asymétrie se chiffrent avec le kurtosis et le skewness, que l'on peut ajouter pour étayer l'analyse.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Pour aller plus loin</h2>
+        <div class="links">
+          <a href="https://ryanoconnellfinance.com/skewness-kurtosis-returns/" target="_blank" rel="noopener">
+            <small>Article · Ryan O'Connell Finance</small>
+            <b>Skewness and Kurtosis: Understanding Fat Tails in Return Distributions</b>
+          </a>
+          <a href="https://www.learnsignal.com/blog/kurtosis/" target="_blank" rel="noopener">
+            <small>Guide · Learnsignal</small>
+            <b>What is Kurtosis?</b>
+          </a>
+        </div>
+      </div>
+
+      <p class="disclaimer">Projet pédagogique. Ne constitue pas un conseil en investissement. Les performances passées ne préjugent pas des performances futures.</p>
+    </section>
+
+  </main>
+</body>
+</html>

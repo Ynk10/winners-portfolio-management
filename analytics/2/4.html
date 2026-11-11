@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Velocity – Allocation optimale | Winners Portfolio Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/analytics.css">
+</head>
+
+<body class="analytics-page theme-velocity">
+
+  <header class="topbar">
+    <a class="brand" href="../../index.html">
+      <img src="../../img/logo.png" alt="">
+      <span>Winners Portfolio Management</span>
+    </a>
+
+    <nav class="pager" aria-label="Analyses Velocity">
+      <span class="label">Velocity · Analyse</span>
+      <a href="3.html" aria-label="Précédente">‹</a>
+      <a href="1.html">1</a>
+      <a href="2.html">2</a>
+      <a href="3.html">3</a>
+      <a class="current" href="4.html">4</a>
+      <a href="5.html">5</a>
+      <a href="6.html">6</a>
+      <a href="5.html" aria-label="Suivante">›</a>
+    </nav>
+
+    <nav class="actions">
+      <a href="../../2.html">← Tableau de bord</a>
+      <a href="news.html">Actualités</a>
+      <a href="../../index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <!-- Colonne 1 : titre, graphe en haut à gauche, lecture du graphe -->
+    <section class="col">
+      <span class="tag">Velocity · Analyse 4 sur 6</span>
+      <h1>Allocation optimale</h1>
+
+      <figure class="graph">
+        <iframe src="../../img/2/marko-4.html" title="Allocation optimale"></iframe>
+      </figure>
+
+      <div class="block">
+        <h2>Sur le graphe</h2>
+          <p>Ce donut montre comment le capital serait réparti entre les 25 actifs dans le portefeuille au <strong>ratio de Sharpe maximal</strong>. Chaque part est le poids d'un actif et l'ensemble fait 100 %. Les parts sont classées de la plus grande à la plus petite, avec le nom et le pourcentage écrits dans la part.</p>
+          <p>Ces poids sont le résultat de l'optimisation : le modèle cherche la combinaison qui offre le meilleur rendement pour chaque unité de risque. Survolez une part pour lire son poids exact, y compris pour les plus petites, qu'on ne peut pas lire directement sur l'anneau.</p>
+      </div>
+    </section>
+
+    <!-- Colonne 2 : observations -->
+    <section class="col">
+      <div class="stats">
+        <div class="stat"><b>25</b><span>actifs dans Velocity</span></div>
+        <div class="stat"><b>9,5 %</b><span>poids maximal (IBE.MC)</span></div>
+        <div class="stat"><b>≈ 16</b><span>actifs effectifs sur 25</span></div>
+      </div>
+
+      <div class="block">
+        <h2>Ce que l'on observe</h2>
+        <ul>
+          <li><strong>Une répartition resserrée.</strong> Aucun actif ne dépasse 9,5 % : IBE.MC (9,46 %), 6857.T (9,33 %) et RR.L (8,98 %) mènent le groupe. Neuf actifs à plus de 5 % pèsent 69,3 % du portefeuille, et le nombre effectif d'actifs est d'environ 16 sur 25, contre 18 pour Serenity.</li>
+          <li><strong>Les stars de la hausse ont un petit poids.</strong> Les sept actifs les plus volatils (plus de 45 % par an) ne pèsent que 15,7 % du capital : MU (+110 % par an) n'a que 1,56 %, CRWD 2,10 %, AMAT 1,60 %, NVDA 0,44 %, LRCX 0,39 % et KLAC 0,23 %. L'exception est 6857.T, à 9,33 %.</li>
+          <li><strong>Un socle de valeurs régulières.</strong> Les huit actifs les moins volatils (moins de 25 % par an : IBE.MC, XOM, V, ITX.MC, ALV.DE, COST, TJX, MA) pèsent 42,7 % du portefeuille.</li>
+          <li><strong>Sept actifs presque écartés.</strong> ASML.AS (0,92 %), MA (0,93 %), CAT (0,74 %), NVDA (0,44 %), LRCX (0,39 %), LLY (0,24 %) et KLAC (0,23 %) sont sous 1 %. NVDA, LRCX et KLAC ont pourtant de forts rendements (+57 à +66 % par an) : leur volatilité de 47 à 53 % l'emporte probablement dans l'arbitrage global.</li>
+          <li><strong>Une diversification géographique.</strong> D'après les suffixes des tickers : États-Unis ≈ 51 %, Europe ≈ 29 %, Canada et Australie ≈ 11 %, Japon ≈ 9 %.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Colonne 3 : limites, à retenir, ressources -->
+    <section class="col">
+      <div class="callout">
+        <h2>À retenir pour Velocity</h2>
+          <p>Velocity n'est pas un pari sur les valeurs les plus spectaculaires : les sept actifs les plus volatils ne pèsent que <strong>15,7 %</strong> du capital. Le portefeuille repose sur un socle de valeurs régulières (IBE.MC, XOM, V, ITX.MC), auquel s'ajoutent quelques paris à fort rendement. En revanche, le risque, lui, se concentre davantage : c'est l'objet de l'analyse 6.</p>
+      </div>
+
+      <div class="block">
+        <h2>Les limites</h2>
+        <ul>
+          <li><strong>Des rendements extrapolés.</strong> Le modèle part de trois ans exceptionnels, avec +110 % par an pour MU et +94 % pour 6857.T. Ces performances sont projetées dans l'avenir, ce qui peut gonfler le poids de certains actifs, comme 6857.T à 9,33 %.</li>
+          <li><strong>Des poids théoriques.</strong> Ils ignorent les frais de transaction, la fiscalité, la liquidité et l'effet de change. Suivre exactement ces pourcentages serait coûteux dans la réalité.</li>
+          <li><strong>Un portefeuille « long seulement ».</strong> Tous les poids sont positifs : pas de vente à découvert ni d'effet de levier, ce qui limite les combinaisons possibles.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Pour aller plus loin</h2>
+        <div class="links">
+          <a href="https://systematicallybiased.substack.com/p/portfolio-optimization-what-could?r=6w89b" target="_blank" rel="noopener">
+            <small>Article · Systematically Biased</small>
+            <b>Optimisation moyenne-variance : ses pièges (concentration, estimation)</b>
+          </a>
+          <a href="https://metricgate.com/docs/robust-portfolio-optimization/" target="_blank" rel="noopener">
+            <small>Guide · MetricGate</small>
+            <b>Robust Portfolio Optimization</b>
+          </a>
+        </div>
+      </div>
+
+      <p class="disclaimer">Projet pédagogique. Ne constitue pas un conseil en investissement. Les performances passées ne préjugent pas des performances futures.</p>
+    </section>
+
+  </main>
+</body>
+</html>

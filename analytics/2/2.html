@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Velocity – Rendements journaliers | Winners Portfolio Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/analytics.css">
+</head>
+
+<body class="analytics-page theme-velocity">
+
+  <header class="topbar">
+    <a class="brand" href="../../index.html">
+      <img src="../../img/logo.png" alt="">
+      <span>Winners Portfolio Management</span>
+    </a>
+
+    <nav class="pager" aria-label="Analyses Velocity">
+      <span class="label">Velocity · Analyse</span>
+      <a href="1.html" aria-label="Précédente">‹</a>
+      <a href="1.html">1</a>
+      <a class="current" href="2.html">2</a>
+      <a href="3.html">3</a>
+      <a href="4.html">4</a>
+      <a href="5.html">5</a>
+      <a href="6.html">6</a>
+      <a href="3.html" aria-label="Suivante">›</a>
+    </nav>
+
+    <nav class="actions">
+      <a href="../../2.html">← Tableau de bord</a>
+      <a href="news.html">Actualités</a>
+      <a href="../../index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <!-- Colonne 1 : titre, graphe en haut à gauche, lecture du graphe -->
+    <section class="col">
+      <span class="tag">Velocity · Analyse 2 sur 6</span>
+      <h1>Rendements journaliers</h1>
+
+      <figure class="graph">
+        <iframe src="../../img/2/marko-2.html" title="Rendements journaliers"></iframe>
+      </figure>
+
+      <div class="block">
+        <h2>Sur le graphe</h2>
+          <p>Un rendement journalier est la variation de prix d'un jour à l'autre, en pourcentage : <strong>0,05 sur l'axe vertical correspond à +5 %</strong>. L'axe de Velocity va de −20 % à +23 % : c'est dix fois plus que la zone où se concentre un portefeuille prudent. Ces valeurs oscillent autour de zéro, contrairement aux prix de l'analyse 1.</p>
+          <p>L'amplitude de ces oscillations, mesurée par l'écart-type puis annualisée (multipliée par √252), s'appelle la <strong>volatilité</strong>. Un nuage étroit signale un actif calme, un pic isolé un jour de choc. Zoomez en glissant la souris (double-clic pour revenir), ou double-cliquez sur un nom de la légende pour isoler un actif.</p>
+      </div>
+    </section>
+
+    <!-- Colonne 2 : observations -->
+    <section class="col">
+      <div class="stats">
+        <div class="stat"><b>25</b><span>actifs dans Velocity</span></div>
+        <div class="stat"><b>−20,6 % / +22,9 %</b><span>pics extrêmes (VRTX, 6857.T)</span></div>
+        <div class="stat"><b>0,84 %</b><span>mouvement quotidien du portefeuille (13,3 % par an)</span></div>
+      </div>
+
+      <div class="block">
+        <h2>Ce que l'on observe</h2>
+        <ul>
+          <li><strong>Un cœur dense, des extrêmes larges.</strong> 96 % des variations quotidiennes restent entre −5 % et +5 %, et 86 % entre −3 % et +3 %. Mais les pics vont jusqu'à −20,6 % (VRTX, 5 août 2025) et +22,9 % (6857.T, 29 octobre 2025).</li>
+          <li><strong>Deux actifs fabriquent les extrêmes.</strong> Sur 106 variations de plus de 10 % (parmi 18 800 observations), 44 viennent de MU (24) et de 6857.T (20). Leur volatilité quotidienne dépasse 4 %, contre 1,1 % environ pour IBE.MC.</li>
+          <li><strong>Des journées de choc communes en avril 2025.</strong> MU perd 16,1 % le 3 avril, puis MU gagne 18,8 % et NVDA 18,7 % le 9 avril : c'est le choc commun repéré à l'analyse 1.</li>
+          <li><strong>Une agitation qui augmente.</strong> Les variations de plus de 10 % passent de 23 en 2024 à 35 en 2025, puis à 45 en 2026 (jusqu'à fin octobre, avec moins de séances). L'amplitude moyenne quotidienne passe de 1,4 % à 1,9 %.</li>
+          <li><strong>Des chocs propres à une entreprise.</strong> CRWD (+20,5 % le 27 août 2026), VRTX (−20,6 % le 5 août 2025) ou ASML.AS (−15,8 % le 15 octobre 2024) ne se retrouvent pas chez les autres actifs : ils sont probablement liés à des annonces propres à l'entreprise.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Colonne 3 : limites, à retenir, ressources -->
+    <section class="col">
+      <div class="callout">
+        <h2>À retenir pour Velocity</h2>
+          <p>Velocity échange de la régularité contre du rendement : certains actifs peuvent bouger de 4 % en une seule journée, mais leurs écarts se compensent en partie. Résultat, le portefeuille ne varie en moyenne que de <strong>0,84 % par jour</strong> (13,3 % par an), soit environ cinq fois moins que MU (65 % par an). C'est la <strong>diversification</strong> que l'on mesure aux analyses 5 et 6.</p>
+      </div>
+
+      <div class="block">
+        <h2>Les limites</h2>
+        <ul>
+          <li><strong>Un graphe saturé.</strong> Vingt-cinq séries et des pics à 20 % rendent le graphe difficile à lire : isolez un actif via la légende, et passez par les statistiques des analyses 3 et 6 pour mesurer le risque.</li>
+          <li><strong>La volatilité traite hausses et baisses pareil.</strong> Un bond de +20 % de CRWD compte autant qu'une chute de −20 % de VRTX : le modèle de Markowitz pénalise aussi les bonnes surprises.</li>
+          <li><strong>Le cas de 6857.T.</strong> Cet actif, coté à Tokyo, compte 49 jours à rendement exactement nul (jours fériés comblés). Sa volatilité et ses corrélations sont probablement sous-estimées, alors qu'il porte à lui seul près de 29 % du risque du portefeuille.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Pour aller plus loin</h2>
+        <div class="links">
+          <a href="https://ryanoconnellfinance.com/course-articles/standard-deviation-in-finance/" target="_blank" rel="noopener">
+            <small>Article · Ryan O'Connell Finance</small>
+            <b>Standard Deviation in Finance: Volatility Explained</b>
+          </a>
+          <a href="https://www.etftrends.com/?p=405438" target="_blank" rel="noopener">
+            <small>Article · ETF Trends</small>
+            <b>Écart-type et risque de perte : les limites de la volatilité</b>
+          </a>
+        </div>
+      </div>
+
+      <p class="disclaimer">Projet pédagogique. Ne constitue pas un conseil en investissement. Les performances passées ne préjugent pas des performances futures.</p>
+    </section>
+
+  </main>
+</body>
+</html>
